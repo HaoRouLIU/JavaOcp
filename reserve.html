@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+    <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css">
+        <meta charset="UTF-8">
+        <title>預約內用</title>
+    </head>
+    <body style="padding:15px">
+    
+        <form class="pure-form" method="get" enctype="multipart/form-data" action="http://localhost:8080/JavaWeb/servlet/reserve">
+            <fieldset>
+                <legend>預約表單</legend>
+                姓名: <input type="text" id="userName" name="userName" placeholder="請輸入姓名" required><p>
+                電子信箱: <input type="email" id="userEmail" name="userEmail" placeholder="請輸入電子信箱" required><p>
+                聯絡電話: <input type="tel" id="userPhone" name="userPhone" placeholder="請輸入聯絡電話" required><p>
+                預約人數:  
+                <select name="people" id="people">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+            <p>
+            
+                預約時段:
+                <select name="time" id="time">
+                    <option value="1">11:00~12:30</option>
+                    <option value="2">14:00~15:30</option>
+                    <option value="3">16:00~17:30</option>
+                    <option value="4">18:00~19:30</option>
+                </select>
+            <p>
+           
+                備註:
+                <textarea name="note" id="note" cols="30" rows="4"></textarea>
+            <p>
+                <button type="reset" class="pure-button">重置</button>
+            
+                <button type="submit" class="pure-button pure-button-primary"value="">送出表單</button>
+            <p>
+            </fieldset>
+        </form>
+
+    </body>
+</html>

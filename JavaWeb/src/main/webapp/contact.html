@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css">
+        <meta charset="UTF-8">
+        <title>聯繫客服</title>
+    </head>
+    <body style="padding:15px">
+    
+        <form class="pure-form" method="get" enctype="multipart/form-data" action="http://http://localhost:8080/JavaWeb/servlet/contact">
+            <fieldset>
+                <legend>聯繫客服</legend>
+                姓名: <input type="text" id="userName" name="userName" placeholder="請輸入姓名" required><p>
+                電子信箱: <input type="text" id="userEmail" name="userEmail" placeholder="請輸入電子信箱" required><p>
+                聯絡電話: <input type="text" id="userPhone" name="userPhone" placeholder="請輸入聯絡電話" required><p>
+                訂單編號: <input type="text" id="userOrder" name="userOrder" placeholder="請輸入訂單編號" required><p>
+            
+                留言:
+                <textarea name="" id="" cols="30" rows="4"></textarea>
+            <p>
+                <button type="reset" class="pure-button">重置</button>
+            
+                <button type="submit" class="pure-botton pure-button-primary"value="">送出表單</button>
+            <p>
+            </fieldset>
+        </form>
+
+    </body>
+</html>
